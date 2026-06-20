@@ -1,0 +1,203 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__fa_1           |Circuit 2: sky130_fd_sc_hd__fa_1           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (14)               |sky130_fd_pr__nfet_01v8 (14)               
+sky130_fd_pr__pfet_01v8_hvt (14)           |sky130_fd_pr__pfet_01v8_hvt (14)           
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fa_1           |Circuit 2: sky130_fd_sc_hd__fa_1           
+-------------------------------------------|-------------------------------------------
+CIN                                        |CIN                                        
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+SUM                                        |SUM                                        
+COUT                                       |COUT                                       
+B                                          |B                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fa_1 and sky130_fd_sc_hd__fa_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: full_adder_4bit                 |Circuit 2: full_adder_4bit                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__fa_1 (4)                  |sky130_fd_sc_hd__fa_1 (4)                  
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 19 **Mismatch**            |Number of nets: 22 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: full_adder_4bit                 |Circuit 2: full_adder_4bit                 
+
+---------------------------------------------------------------------------------------
+Net: A1                                    |Net: A1                                    
+  sky130_fd_sc_hd__fa_1/A = 1              |  sky130_fd_sc_hd__fa_1/A = 1              
+                                           |                                           
+Net: A2                                    |Net: A2                                    
+  sky130_fd_sc_hd__fa_1/A = 1              |  sky130_fd_sc_hd__fa_1/A = 1              
+                                           |                                           
+Net: B1                                    |Net: B1                                    
+  sky130_fd_sc_hd__fa_1/B = 1              |  sky130_fd_sc_hd__fa_1/B = 1              
+                                           |                                           
+Net: B2                                    |Net: B2                                    
+  sky130_fd_sc_hd__fa_1/B = 1              |  sky130_fd_sc_hd__fa_1/B = 1              
+                                           |                                           
+Net: S1                                    |Net: S1                                    
+  sky130_fd_sc_hd__fa_1/SUM = 1            |  sky130_fd_sc_hd__fa_1/SUM = 1            
+                                           |                                           
+Net: S2                                    |Net: S2                                    
+  sky130_fd_sc_hd__fa_1/SUM = 1            |  sky130_fd_sc_hd__fa_1/SUM = 1            
+                                           |                                           
+Net: A3                                    |Net: A3                                    
+  sky130_fd_sc_hd__fa_1/A = 1              |  sky130_fd_sc_hd__fa_1/A = 1              
+                                           |                                           
+Net: B3                                    |Net: B3                                    
+  sky130_fd_sc_hd__fa_1/B = 1              |  sky130_fd_sc_hd__fa_1/B = 1              
+                                           |                                           
+Net: COUT                                  |Net: COUT                                  
+  sky130_fd_sc_hd__fa_1/COUT = 1           |  sky130_fd_sc_hd__fa_1/COUT = 1           
+                                           |                                           
+Net: S3                                    |Net: S3                                    
+  sky130_fd_sc_hd__fa_1/SUM = 1            |  sky130_fd_sc_hd__fa_1/SUM = 1            
+                                           |                                           
+Net: VGND                                  |Net: VGND                                  
+  sky130_fd_sc_hd__fa_1/VGND = 4           |  sky130_fd_sc_hd__fa_1/VGND = 4           
+  sky130_fd_sc_hd__fa_1/VNB = 4            |  sky130_fd_sc_hd__fa_1/COUT = 1           
+                                           |  sky130_fd_sc_hd__fa_1/CIN = 1            
+                                           |                                           
+Net: VPWR                                  |Net: VPWR                                  
+  sky130_fd_sc_hd__fa_1/VPWR = 4           |  sky130_fd_sc_hd__fa_1/VPWR = 4           
+  sky130_fd_sc_hd__fa_1/VPB = 4            |                                           
+                                           |                                           
+(no matching net)                          |Net: x1/VPB                                
+                                           |  sky130_fd_sc_hd__fa_1/VPB = 1            
+                                           |                                           
+(no matching net)                          |Net: VSUBS                                 
+                                           |  sky130_fd_sc_hd__fa_1/VNB = 4            
+                                           |                                           
+(no matching net)                          |Net: x4/VPB                                
+                                           |  sky130_fd_sc_hd__fa_1/VPB = 1            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net3                                  |Net: x3/CIN                                
+  sky130_fd_sc_hd__fa_1/COUT = 1           |  sky130_fd_sc_hd__fa_1/COUT = 1           
+  sky130_fd_sc_hd__fa_1/CIN = 1            |  sky130_fd_sc_hd__fa_1/CIN = 1            
+                                           |                                           
+Net: net2                                  |Net: x3/VPB                                
+  sky130_fd_sc_hd__fa_1/COUT = 1           |  sky130_fd_sc_hd__fa_1/VPB = 2            
+  sky130_fd_sc_hd__fa_1/CIN = 1            |                                           
+                                           |                                           
+Net: net1                                  |Net: x2/CIN                                
+  sky130_fd_sc_hd__fa_1/COUT = 1           |  sky130_fd_sc_hd__fa_1/COUT = 1           
+  sky130_fd_sc_hd__fa_1/CIN = 1            |  sky130_fd_sc_hd__fa_1/CIN = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: full_adder_4bit                 |Circuit 2: full_adder_4bit                 
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__fa_1:4          |Instance: sky130_fd_sc_hd__fa_1:x4         
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  CIN = 2                                  |  CIN = 6                                  
+  VGND = 8                                 |  VGND = 6                                 
+  VNB = 8                                  |  VNB = 4                                  
+  VPB = 8                                  |  VPB = 1                                  
+  VPWR = 8                                 |  VPWR = 4                                 
+  COUT = 1                                 |  COUT = 1                                 
+  SUM = 1                                  |  SUM = 1                                  
+                                           |                                           
+Instance: sky130_fd_sc_hd__fa_1:3          |Instance: sky130_fd_sc_hd__fa_1:x3         
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  CIN = 2                                  |  CIN = 2                                  
+  VGND = 8                                 |  VGND = 6                                 
+  VNB = 8                                  |  VNB = 4                                  
+  VPB = 8                                  |  VPB = 2                                  
+  VPWR = 8                                 |  VPWR = 4                                 
+  COUT = 2                                 |  COUT = 6                                 
+  SUM = 1                                  |  SUM = 1                                  
+                                           |                                           
+Instance: sky130_fd_sc_hd__fa_1:2          |Instance: sky130_fd_sc_hd__fa_1:x2         
+  A = 1                                    |  A = 1                                    
+  B = 1                                    |  B = 1                                    
+  CIN = 2                                  |  CIN = 2                                  
+  VGND = 8                                 |  VGND = 6                                 
+  VNB = 8                                  |  VNB = 4                                  
+  VPB = 8                                  |  VPB = 2                                  
+  VPWR = 8                                 |  VPWR = 4                                 
+  COUT = 2                                 |  COUT = 2                                 
+  SUM = 1                                  |  SUM = 1                                  
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: full_adder_4bit                 |Circuit 2: full_adder_4bit                 
+-------------------------------------------|-------------------------------------------
+A1                                         |(no pin, node is x1/VPB)                   
+A2                                         |A1 **Mismatch**                            
+B1                                         |B1                                         
+B2                                         |S1 **Mismatch**                            
+S1                                         |A2 **Mismatch**                            
+S2                                         |B2 **Mismatch**                            
+A3                                         |S2 **Mismatch**                            
+B3                                         |A3 **Mismatch**                            
+COUT                                       |B3 **Mismatch**                            
+S3                                         |(no pin, node is x4/VPB)                   
+VGND                                       |COUT **Mismatch**                          
+VPWR                                       |S3 **Mismatch**                            
+S0                                         |S0                                         
+CIN                                        |CIN                                        
+B0                                         |B0                                         
+A0                                         |A0                                         
+(no pin, node is VPWR)                     |VGND                                       
+(no pin, node is VPWR)                     |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for full_adder_4bit and full_adder_4bit altered to match.
+Device classes full_adder_4bit and full_adder_4bit are equivalent.
+
+Final result: Top level cell failed pin matching.
+-----------------------------------------
+Finish comparing spice netlist of full_adder_4bit between:
+Circuit 1: /home/me/sky130_adder_4bit/xschem/full_adder_4bit.spice (last modified: 2026-06-05 13:32:56)
+Circuit 2: /home/me/sky130_adder_4bit/magic/full_adder_4bit.spice (last modified: 2026-06-05 13:39:42)
+Final result: Circuits mismatch!
+Report file: full_adder_4bit.log
+-----------------------------------------

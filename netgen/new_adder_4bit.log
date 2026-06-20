@@ -1,0 +1,98 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hd__fa_1           |Circuit 2: sky130_fd_sc_hd__fa_1           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (14)               |sky130_fd_pr__nfet_01v8 (14)               
+sky130_fd_pr__pfet_01v8_hvt (14)           |sky130_fd_pr__pfet_01v8_hvt (14)           
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fa_1           |Circuit 2: sky130_fd_sc_hd__fa_1           
+-------------------------------------------|-------------------------------------------
+CIN                                        |CIN                                        
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+SUM                                        |SUM                                        
+COUT                                       |COUT                                       
+B                                          |B                                          
+A                                          |A                                          
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fa_1 and sky130_fd_sc_hd__fa_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: new_adder_4bit                  |Circuit 2: new_adder_4bit                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__fa_1 (4)                  |sky130_fd_sc_hd__fa_1 (4)                  
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: new_adder_4bit                  |Circuit 2: new_adder_4bit                  
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+A0                                         |A0                                         
+B0                                         |B0                                         
+CIN                                        |CIN                                        
+S0                                         |S0                                         
+A2                                         |A2                                         
+A1                                         |A1                                         
+B2                                         |B2                                         
+B1                                         |B1                                         
+S2                                         |S2                                         
+S1                                         |S1                                         
+A3                                         |A3                                         
+B3                                         |B3                                         
+COUT                                       |COUT                                       
+S3                                         |S3                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes new_adder_4bit and new_adder_4bit are equivalent.
+
+Final result: Circuits match uniquely.
+.
+-----------------------------------------
+Finish comparing spice netlist of new_adder_4bit between:
+Circuit 1: /home/me/sky130_adder_4bit/xschem/new_adder_4bit.spice (last modified: 2026-06-06 11:20:36)
+Circuit 2: /home/me/sky130_adder_4bit/magic/new_adder_4bit.spice (last modified: 2026-06-06 13:46:13)
+Final result: Circuits match uniquely!
+Report file: new_adder_4bit.log
+-----------------------------------------

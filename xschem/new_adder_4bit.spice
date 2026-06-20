@@ -1,0 +1,8 @@
+** sch_path: /home/me/sky130_adder_4bit/xschem/new_adder_4bit.sch
+.subckt new_adder_4bit A0 A1 A2 A3 S0 S1 S2 S3 B0 B1 B2 B3 CIN COUT VDD GND
+*.PININFO A0:I A1:I A2:I A3:I S0:O S1:O S2:O S3:O B0:I B1:I B2:I B3:I CIN:I COUT:O VDD:I GND:I
+x1 A0 B0 CIN GND GND VDD VDD net1 S0 sky130_fd_sc_hd__fa_1
+x2 A1 B1 net1 GND GND VDD VDD net2 S1 sky130_fd_sc_hd__fa_1
+x3 A2 B2 net2 GND GND VDD VDD net3 S2 sky130_fd_sc_hd__fa_1
+x4 A3 B3 net3 GND GND VDD VDD COUT S3 sky130_fd_sc_hd__fa_1
+.ends

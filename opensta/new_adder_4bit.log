@@ -1,0 +1,88 @@
+OpenSTA 3.1.0 1eb2e9b11d Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+ time 1ns
+ capacitance 1pF
+ resistance 1kohm
+ voltage 1v
+ current 1mA
+ power 1nW
+ distance 1um
+Startpoint: A0 (input port clocked by clk)
+Endpoint: S3 (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 v input external delay
+     1    0.01    0.02    0.01    0.01 v A0 (in)
+                  0.02    0.00    0.01 v x1/A (sky130_fd_sc_hd__fa_1)
+     1    0.00    0.08    0.42    0.43 v x1/COUT (sky130_fd_sc_hd__fa_1)
+                  0.08    0.00    0.43 v x2/CIN (sky130_fd_sc_hd__fa_1)
+     1    0.00    0.08    0.38    0.81 v x2/COUT (sky130_fd_sc_hd__fa_1)
+                  0.08    0.00    0.81 v x3/CIN (sky130_fd_sc_hd__fa_1)
+     1    0.00    0.08    0.38    1.19 v x3/COUT (sky130_fd_sc_hd__fa_1)
+                  0.08    0.00    1.19 v x4/CIN (sky130_fd_sc_hd__fa_1)
+     1    0.01    0.12    0.54    1.72 ^ x4/SUM (sky130_fd_sc_hd__fa_1)
+                  0.12    0.00    1.72 ^ S3 (out)
+                                  1.72   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                         -0.20    9.80   output external delay
+                                  9.80   data required time
+-----------------------------------------------------------------------------
+                                  9.80   data required time
+                                 -1.72   data arrival time
+-----------------------------------------------------------------------------
+                                  8.08   slack (MET)
+
+
+Startpoint: CIN (input port clocked by clk)
+Endpoint: S0 (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00 ^ input external delay
+     1    0.00    0.03    0.02    0.02 ^ CIN (in)
+                  0.03    0.00    0.02 ^ x1/CIN (sky130_fd_sc_hd__fa_1)
+     1    0.01    0.12    0.19    0.21 ^ x1/SUM (sky130_fd_sc_hd__fa_1)
+                  0.12    0.00    0.21 ^ S0 (out)
+                                  0.21   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                          0.02    0.02   output external delay
+                                  0.02   data required time
+-----------------------------------------------------------------------------
+                                  0.02   data required time
+                                 -0.21   data arrival time
+-----------------------------------------------------------------------------
+                                  0.19   slack (MET)
+
+
+tns max 0.00
+wns max 0.00
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.59e-06   2.98e-06   2.92e-11   5.57e-06 100.0%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.59e-06   2.98e-06   2.92e-11   5.57e-06 100.0%
+                          46.4%      53.6%       0.0%

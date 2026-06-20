@@ -1,0 +1,8 @@
+** sch_path: /home/me/sky130_adder_4bit/xschem/full_adder_4bit.sch
+.subckt full_adder_4bit A0 B0 A1 B1 A2 B2 A3 B3 S0 S1 S2 S3 COUT CIN VPWR VGND
+*.PININFO A0:I B0:I A1:I B1:I A2:I B2:I A3:I B3:I S0:O S1:O S2:O S3:O COUT:O CIN:I VPWR:I VGND:I
+x1 A0 B0 CIN VGND VGND VPWR VPWR net1 S0 sky130_fd_sc_hd__fa_1
+x2 A1 B1 net1 VGND VGND VPWR VPWR net2 S1 sky130_fd_sc_hd__fa_1
+x3 A2 B2 net2 VGND VGND VPWR VPWR net3 S2 sky130_fd_sc_hd__fa_1
+x4 A3 B3 net3 VGND VGND VPWR VPWR COUT S3 sky130_fd_sc_hd__fa_1
+.ends
