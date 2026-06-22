@@ -41,7 +41,7 @@ X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.169 ps=1.82 w=0.65
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.26 ps=2.52 w=1 l=0.15
 .ends
 
-.subckt zlc_4bit A[3] A[0] A[1] A[2] Z[2] Z[1] Z[0] VDD GND
+.subckt zlc_4bit A[3] A[0] A[1] A[2] VDD GND Z[0] Z[2] Z[1]
 Xx1 A[3] A[2] A[1] A[0] GND GND VDD VDD Z[2] sky130_fd_sc_hd__nor4_1
 Xx3 A[1] A[0] GND GND VDD VDD x4/B sky130_fd_sc_hd__or2_1
 Xx2 A[3] A[2] GND GND VDD VDD x4/A sky130_fd_sc_hd__nor2_1

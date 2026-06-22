@@ -183,8 +183,8 @@ Final result: Circuits match uniquely.
 .
 -----------------------------------------
 Finish comparing spice netlist of zlc_4bit between:
-Circuit 1: /home/me/sky130_adder_4bit/xschem/zlc_4bit.spice (last modified: 2026-06-20 10:00:14)
-Circuit 2: /home/me/sky130_adder_4bit/magic/zlc_4bit.spice (last modified: 2026-06-20 10:22:44)
+Circuit 1: /home/me/sky130_zlc_4bit/xschem/zlc_4bit.spice (last modified: 2026-06-20 10:00:14)
+Circuit 2: /home/me/sky130_zlc_4bit/magic/zlc_4bit.spice (last modified: 2026-06-22 14:36:25)
 Final result: Circuits match uniquely!
 Report file: zlc_4bit.log
 -----------------------------------------

@@ -1,2 +1,2 @@
 .include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /home/me/sky130_adder_4bit/xschem/zlc_4bit.spice
+.include /home/me/sky130_zlc_4bit/xschem/zlc_16bit.spice
