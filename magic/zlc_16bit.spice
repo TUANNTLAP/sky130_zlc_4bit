@@ -101,18 +101,18 @@ X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0.11285 pd=1.045 as=0.169 ps
 
 .subckt zlc_16bit Y[4] Y[3] Y[2] Y[1] Y[0] A[15] A[12] A[13] A[14] A[11] A[8] A[9]
 + A[10] A[6] A[5] A[4] A[7] A[2] A[1] A[0] A[3] VDD GND
-Xx1 A[15] A[12] A[13] A[14] x16/A0 x7/A x13/A1 VDD GND zlc_4bit
-Xx2 A[11] A[8] A[9] A[10] x16/A1 x8/A x13/A0 VDD GND zlc_4bit
+Xx1 A[15] A[12] A[13] A[14] x16/A0 x7/A x13/A0 VDD GND zlc_4bit
+Xx2 A[11] A[8] A[9] A[10] x16/A1 x8/A x13/A1 VDD GND zlc_4bit
 Xx3 A[7] A[4] A[5] A[6] x17/A0 x6/A x14/A0 VDD GND zlc_4bit
-Xx4 A[3] A[0] A[1] A[2] x4/Z[0] x9/A x14/A1 VDD GND zlc_4bit
+Xx4 A[3] A[0] A[1] A[2] x17/A1 x9/A x14/A1 VDD GND zlc_4bit
 Xx5 x7/A x8/A x6/A x9/A GND GND VDD VDD Y[4] sky130_fd_sc_hd__and4_1
 Xx6 x6/A x9/A GND GND VDD VDD x7/C sky130_fd_sc_hd__nand2_1
 Xx7 x7/A x8/A x7/C GND GND VDD VDD Y[3] sky130_fd_sc_hd__and3_1
 Xx8 x8/A GND GND VDD VDD x8/Y sky130_fd_sc_hd__inv_1
 Xx9 x9/A GND GND VDD VDD x9/Y sky130_fd_sc_hd__inv_1
-Xx10 x9/Y x6/A GND GND VDD VDD x11/B sky130_fd_sc_hd__and2_1
-Xx11 x8/Y x11/B GND GND VDD VDD x12/B sky130_fd_sc_hd__or2_1
-Xx12 x7/A x12/B GND GND VDD VDD Y[2] sky130_fd_sc_hd__and2_1
+Xx10 x7/A x11/X GND GND VDD VDD Y[2] sky130_fd_sc_hd__and2_1
+Xx11 x8/Y x12/X GND GND VDD VDD x11/X sky130_fd_sc_hd__or2_1
+Xx12 x6/A x9/Y GND GND VDD VDD x12/X sky130_fd_sc_hd__and2_1
 Xx13 x13/A0 x13/A1 Y[2] GND GND VDD VDD x13/X sky130_fd_sc_hd__mux2_1
 Xx15 x13/X x14/X Y[3] GND GND VDD VDD Y[1] sky130_fd_sc_hd__mux2_1
 Xx14 x14/A0 x14/A1 Y[2] GND GND VDD VDD x14/X sky130_fd_sc_hd__mux2_1

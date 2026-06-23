@@ -1,4 +1,4 @@
-// sch_path: /home/me/sky130_adder_4bit/xschem/zlc_16bit.sch
+// sch_path: /home/me/sky130_zlc_4bit/xschem/zlc_16bit.sch
 module zlc_16bit
 (
   output wire [4:0] Y,
@@ -177,8 +177,8 @@ x4 (
 endmodule
 
 // expanding   symbol:  zlc_4bit.sym # of pins=4
-// sym_path: /home/me/sky130_adder_4bit/xschem/zlc_4bit.sym
-// sch_path: /home/me/sky130_adder_4bit/xschem/zlc_4bit.sch
+// sym_path: /home/me/sky130_zlc_4bit/xschem/zlc_4bit.sym
+// sch_path: /home/me/sky130_zlc_4bit/xschem/zlc_4bit.sch
 module zlc_4bit
 (
   output wire [2:0] Z,

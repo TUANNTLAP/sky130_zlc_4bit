@@ -291,217 +291,46 @@ sky130_fd_sc_hd__or2_1 (1)                 |sky130_fd_sc_hd__or2_1 (1)
 sky130_fd_sc_hd__mux2_1 (6)                |sky130_fd_sc_hd__mux2_1 (6)                
 zlc_4bit (4)                               |zlc_4bit (4)                               
 Number of devices: 18                      |Number of devices: 18                      
-Number of nets: 44 **Mismatch**            |Number of nets: 45 **Mismatch**            
+Number of nets: 44                         |Number of nets: 44                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: zlc_16bit                       |Circuit 2: zlc_16bit                       
-
----------------------------------------------------------------------------------------
-Net: net2                                  |Net: x4/Z[0]                               
-  sky130_fd_sc_hd__inv_1/Y = 1             |  zlc_4bit/Z[0] = 1                        
-  sky130_fd_sc_hd__and2_1/B = 1            |                                           
-                                           |                                           
-Net: net3                                  |Net: x17/A1                                
-  sky130_fd_sc_hd__or2_1/B = 1             |  sky130_fd_sc_hd__mux2_1/A1 = 1           
-  sky130_fd_sc_hd__and2_1/X = 1            |                                           
-                                           |                                           
-Net: Z2[0]                                 |Net: x16/A1                                
-  sky130_fd_sc_hd__mux2_1/A1 = 1           |  zlc_4bit/Z[0] = 1                        
-  zlc_4bit/Z[0] = 1                        |  sky130_fd_sc_hd__mux2_1/A1 = 1           
-                                           |                                           
-Net: Z0[0]                                 |Net: x9/Y                                  
-  sky130_fd_sc_hd__mux2_1/A1 = 1           |  sky130_fd_sc_hd__inv_1/Y = 1             
-  zlc_4bit/Z[0] = 1                        |  sky130_fd_sc_hd__and2_1/A = 1            
-                                           |                                           
-(no matching net)                          |Net: x11/B                                 
-                                           |  sky130_fd_sc_hd__and2_1/X = 1            
-                                           |  sky130_fd_sc_hd__or2_1/B = 1             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z3[0]                                 |Net: x16/A0                                
-  sky130_fd_sc_hd__mux2_1/A0 = 1           |  sky130_fd_sc_hd__mux2_1/A0 = 1           
-  zlc_4bit/Z[0] = 1                        |  zlc_4bit/Z[0] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z2[1]                                 |Net: x13/A1                                
-  sky130_fd_sc_hd__mux2_1/A1 = 1           |  sky130_fd_sc_hd__mux2_1/A1 = 1           
-  zlc_4bit/Z[1] = 1                        |  zlc_4bit/Z[1] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z3[1]                                 |Net: x13/A0                                
-  sky130_fd_sc_hd__mux2_1/A0 = 1           |  sky130_fd_sc_hd__mux2_1/A0 = 1           
-  zlc_4bit/Z[1] = 1                        |  zlc_4bit/Z[1] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: A[8]                                  |Net: A[8]                                  
-  zlc_4bit/A[0] = 1                        |  zlc_4bit/A[0] = 1                        
-                                           |                                           
-Net: A[12]                                 |Net: A[12]                                 
-  zlc_4bit/A[0] = 1                        |  zlc_4bit/A[0] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: A[9]                                  |Net: A[9]                                  
-  zlc_4bit/A[1] = 1                        |  zlc_4bit/A[1] = 1                        
-                                           |                                           
-Net: A[13]                                 |Net: A[13]                                 
-  zlc_4bit/A[1] = 1                        |  zlc_4bit/A[1] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: A[10]                                 |Net: A[10]                                 
-  zlc_4bit/A[2] = 1                        |  zlc_4bit/A[2] = 1                        
-                                           |                                           
-Net: A[14]                                 |Net: A[14]                                 
-  zlc_4bit/A[2] = 1                        |  zlc_4bit/A[2] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: A[11]                                 |Net: A[11]                                 
-  zlc_4bit/A[3] = 1                        |  zlc_4bit/A[3] = 1                        
-                                           |                                           
-Net: A[15]                                 |Net: A[15]                                 
-  zlc_4bit/A[3] = 1                        |  zlc_4bit/A[3] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: GND                                   |Net: GND                                   
-  sky130_fd_sc_hd__and4_1/VGND = 1         |  sky130_fd_sc_hd__and4_1/VGND = 1         
-  sky130_fd_sc_hd__and4_1/VNB = 1          |  sky130_fd_sc_hd__and4_1/VNB = 1          
-  sky130_fd_sc_hd__nand2_1/VGND = 1        |  sky130_fd_sc_hd__nand2_1/VGND = 1        
-  sky130_fd_sc_hd__nand2_1/VNB = 1         |  sky130_fd_sc_hd__nand2_1/VNB = 1         
-  sky130_fd_sc_hd__and3_1/VGND = 1         |  sky130_fd_sc_hd__and3_1/VGND = 1         
-  sky130_fd_sc_hd__and3_1/VNB = 1          |  sky130_fd_sc_hd__and3_1/VNB = 1          
-  sky130_fd_sc_hd__inv_1/VGND = 2          |  sky130_fd_sc_hd__inv_1/VGND = 2          
-  sky130_fd_sc_hd__inv_1/VNB = 2           |  sky130_fd_sc_hd__inv_1/VNB = 2           
-  sky130_fd_sc_hd__and2_1/VGND = 2         |  sky130_fd_sc_hd__and2_1/VGND = 2         
-  sky130_fd_sc_hd__and2_1/VNB = 2          |  sky130_fd_sc_hd__and2_1/VNB = 2          
-  sky130_fd_sc_hd__or2_1/VGND = 1          |  sky130_fd_sc_hd__or2_1/VGND = 1          
-  sky130_fd_sc_hd__or2_1/VNB = 1           |  sky130_fd_sc_hd__or2_1/VNB = 1           
-  sky130_fd_sc_hd__mux2_1/VGND = 6         |  sky130_fd_sc_hd__mux2_1/VGND = 6         
-  sky130_fd_sc_hd__mux2_1/VNB = 6          |  sky130_fd_sc_hd__mux2_1/VNB = 6          
-  zlc_4bit/GND = 4                         |  zlc_4bit/GND = 4                         
-                                           |                                           
-Net: VDD                                   |Net: VDD                                   
-  sky130_fd_sc_hd__and4_1/VPB = 1          |  sky130_fd_sc_hd__and4_1/VPB = 1          
-  sky130_fd_sc_hd__and4_1/VPWR = 1         |  sky130_fd_sc_hd__and4_1/VPWR = 1         
-  sky130_fd_sc_hd__nand2_1/VPB = 1         |  sky130_fd_sc_hd__nand2_1/VPB = 1         
-  sky130_fd_sc_hd__nand2_1/VPWR = 1        |  sky130_fd_sc_hd__nand2_1/VPWR = 1        
-  sky130_fd_sc_hd__and3_1/VPB = 1          |  sky130_fd_sc_hd__and3_1/VPB = 1          
-  sky130_fd_sc_hd__and3_1/VPWR = 1         |  sky130_fd_sc_hd__and3_1/VPWR = 1         
-  sky130_fd_sc_hd__inv_1/VPB = 2           |  sky130_fd_sc_hd__inv_1/VPB = 2           
-  sky130_fd_sc_hd__inv_1/VPWR = 2          |  sky130_fd_sc_hd__inv_1/VPWR = 2          
-  sky130_fd_sc_hd__and2_1/VPB = 2          |  sky130_fd_sc_hd__and2_1/VPB = 2          
-  sky130_fd_sc_hd__and2_1/VPWR = 2         |  sky130_fd_sc_hd__and2_1/VPWR = 2         
-  sky130_fd_sc_hd__or2_1/VPB = 1           |  sky130_fd_sc_hd__or2_1/VPB = 1           
-  sky130_fd_sc_hd__or2_1/VPWR = 1          |  sky130_fd_sc_hd__or2_1/VPWR = 1          
-  sky130_fd_sc_hd__mux2_1/VPB = 6          |  sky130_fd_sc_hd__mux2_1/VPB = 6          
-  sky130_fd_sc_hd__mux2_1/VPWR = 6         |  sky130_fd_sc_hd__mux2_1/VPWR = 6         
-  zlc_4bit/VDD = 4                         |  zlc_4bit/VDD = 4                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z1[2]                                 |Net: x6/A                                  
-  sky130_fd_sc_hd__and4_1/C = 1            |  sky130_fd_sc_hd__and4_1/C = 1            
-  sky130_fd_sc_hd__nand2_1/A = 1           |  sky130_fd_sc_hd__nand2_1/A = 1           
-  sky130_fd_sc_hd__and2_1/A = 1            |  sky130_fd_sc_hd__and2_1/B = 1            
-  zlc_4bit/Z[2] = 1                        |  zlc_4bit/Z[2] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z3[2]                                 |Net: x7/A                                  
-  sky130_fd_sc_hd__and4_1/A = 1            |  sky130_fd_sc_hd__and4_1/A = 1            
-  sky130_fd_sc_hd__and3_1/A = 1            |  sky130_fd_sc_hd__and3_1/A = 1            
-  sky130_fd_sc_hd__and2_1/A = 1            |  sky130_fd_sc_hd__and2_1/A = 1            
-  zlc_4bit/Z[2] = 1                        |  zlc_4bit/Z[2] = 1                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Z2[2]                                 |Net: x8/A                                  
-  sky130_fd_sc_hd__and4_1/B = 1            |  sky130_fd_sc_hd__and4_1/B = 1            
-  sky130_fd_sc_hd__and3_1/B = 1            |  sky130_fd_sc_hd__and3_1/B = 1            
-  sky130_fd_sc_hd__inv_1/A = 1             |  sky130_fd_sc_hd__inv_1/A = 1             
-  zlc_4bit/Z[2] = 1                        |  zlc_4bit/Z[2] = 1                        
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: zlc_16bit                       |Circuit 2: zlc_16bit                       
-
----------------------------------------------------------------------------------------
-Instance: zlc_4bit:1                       |Instance: zlc_4bit:x1                      
-  Z[2] = 4                                 |  Z[2] = 4                                 
-  Z[1] = 2                                 |  Z[1] = 2                                 
-  Z[0] = 2                                 |  Z[0] = 2                                 
-  A[3] = 1                                 |  A[3] = 1                                 
-  A[2] = 1                                 |  A[2] = 1                                 
-  A[1] = 1                                 |  A[1] = 1                                 
-  A[0] = 1                                 |  A[0] = 1                                 
-  VDD = 32                                 |  VDD = 32                                 
-  GND = 32                                 |  GND = 32                                 
-                                           |                                           
-Instance: zlc_4bit:2                       |Instance: zlc_4bit:x2                      
-  Z[2] = 4                                 |  Z[2] = 4                                 
-  Z[1] = 2                                 |  Z[1] = 2                                 
-  Z[0] = 2                                 |  Z[0] = 2                                 
-  A[3] = 1                                 |  A[3] = 1                                 
-  A[2] = 1                                 |  A[2] = 1                                 
-  A[1] = 1                                 |  A[1] = 1                                 
-  A[0] = 1                                 |  A[0] = 1                                 
-  VDD = 32                                 |  VDD = 32                                 
-  GND = 32                                 |  GND = 32                                 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_sc_hd__and2_1:12       |Instance: sky130_fd_sc_hd__and2_1:x10      
-  A = 4                                    |  A = 2                                    
-  B = 2                                    |  B = 4                                    
-  VGND = 32                                |  VGND = 32                                
-  VNB = 32                                 |  VNB = 32                                 
-  VPB = 32                                 |  VPB = 32                                 
-  VPWR = 32                                |  VPWR = 32                                
-  X = 2                                    |  X = 2                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: zlc_16bit                       |Circuit 2: zlc_16bit                       
 -------------------------------------------|-------------------------------------------
-A[8]                                       |A[8]                                       
-A[12]                                      |A[12]                                      
-A[4]                                       |A[4]                                       
-A[0]                                       |A[0]                                       
-A[9]                                       |A[9]                                       
-A[13]                                      |A[13]                                      
-A[5]                                       |A[5]                                       
-A[1]                                       |A[1]                                       
-A[10]                                      |A[10]                                      
-A[14]                                      |A[14]                                      
-A[6]                                       |A[6]                                       
-A[2]                                       |A[2]                                       
-A[11]                                      |A[11]                                      
-A[15]                                      |A[15]                                      
-A[7]                                       |A[7]                                       
-A[3]                                       |A[3]                                       
-Y[0]                                       |Y[0]                                       
-Y[1]                                       |Y[1]                                       
-Y[4]                                       |Y[4]                                       
 Y[2]                                       |Y[2]                                       
 Y[3]                                       |Y[3]                                       
-VDD                                        |GND **Mismatch**                           
-GND                                        |VDD **Mismatch**                           
+A[3]                                       |A[3]                                       
+A[7]                                       |A[7]                                       
+A[11]                                      |A[11]                                      
+A[15]                                      |A[15]                                      
+A[0]                                       |A[0]                                       
+A[4]                                       |A[4]                                       
+A[8]                                       |A[8]                                       
+A[12]                                      |A[12]                                      
+A[1]                                       |A[1]                                       
+A[5]                                       |A[5]                                       
+A[9]                                       |A[9]                                       
+A[13]                                      |A[13]                                      
+A[2]                                       |A[2]                                       
+A[6]                                       |A[6]                                       
+A[10]                                      |A[10]                                      
+A[14]                                      |A[14]                                      
+Y[4]                                       |Y[4]                                       
+Y[1]                                       |Y[1]                                       
+Y[0]                                       |Y[0]                                       
+VDD                                        |VDD                                        
+GND                                        |GND                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for zlc_16bit and zlc_16bit altered to match.
+Cell pin lists are equivalent.
 Device classes zlc_16bit and zlc_16bit are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
 -----------------------------------------
 Finish comparing spice netlist of zlc_16bit between:
-Circuit 1: /home/me/sky130_zlc_4bit/xschem/zlc_16bit.spice (last modified: 2026-06-19 21:10:09)
-Circuit 2: /home/me/sky130_zlc_4bit/magic/zlc_16bit.spice (last modified: 2026-06-22 18:25:59)
-Final result: Circuits mismatch!
+Circuit 1: /home/me/sky130_zlc_4bit/xschem/zlc_16bit.spice (last modified: 2026-06-23 16:51:54)
+Circuit 2: /home/me/sky130_zlc_4bit/magic/zlc_16bit.spice (last modified: 2026-06-23 17:44:23)
+Final result: Circuits match uniquely!
 Report file: zlc_16bit.log
 -----------------------------------------
