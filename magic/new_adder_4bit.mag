@@ -1,11 +1,18 @@
 magic
 tech sky130A
-timestamp 1780728304
+timestamp 1782361623
 << nwell >>
-rect 0 -330 774 -309
+rect 0 -335 820 -302
+<< pwell >>
+rect 733 35 799 125
+rect 736 -125 799 -35
+rect 733 -605 799 -515
+rect 742 -765 799 -675
+<< locali >>
+rect 726 202 743 219
 << viali >>
 rect 542 202 559 219
-rect 726 202 743 219
+rect 726 134 743 151
 rect 34 67 51 84
 rect 31 -151 48 -134
 rect 215 -219 232 -202
@@ -17,41 +24,42 @@ rect 31 -826 48 -809
 rect 215 -859 232 -842
 rect 723 -893 740 -876
 << metal1 >>
-rect 19 309 755 320
+rect 19 309 801 320
 rect 19 283 228 309
 rect 254 283 364 309
 rect 390 283 500 309
 rect 526 283 636 309
-rect 662 283 755 309
-rect 19 272 755 283
+rect 662 283 801 309
+rect 19 272 801 283
 rect 534 229 567 232
 rect 534 202 537 229
 rect 564 202 567 229
 rect 534 199 567 202
-rect 720 219 749 224
-rect 720 202 726 219
-rect 743 202 774 219
-rect 720 198 749 202
 rect -1 169 169 186
 rect -1 135 124 152
+rect 720 151 749 157
+rect 720 134 726 151
+rect 743 135 820 151
+rect 743 134 749 135
+rect 720 129 749 134
 rect 27 91 59 92
 rect 27 65 30 91
 rect 56 65 59 91
 rect 27 62 59 65
-rect 19 13 755 48
+rect 19 13 801 48
 rect 19 -13 160 13
 rect 187 -13 296 13
 rect 322 -13 432 13
 rect 458 -13 568 13
-rect 594 -13 755 13
-rect 19 -48 755 -13
+rect 594 -13 801 13
+rect 19 -48 801 -13
 rect 24 -134 54 -128
 rect 24 -135 31 -134
 rect 0 -151 31 -135
 rect 48 -151 54 -134
-rect 651 -151 774 -135
+rect 651 -151 820 -135
 rect 24 -158 54 -151
-rect 605 -185 774 -169
+rect 605 -185 820 -169
 rect 208 -201 240 -199
 rect 208 -227 211 -201
 rect 237 -227 240 -201
@@ -60,13 +68,13 @@ rect 716 -229 748 -227
 rect 716 -255 719 -229
 rect 745 -255 748 -229
 rect 716 -258 748 -255
-rect 19 -307 755 -272
+rect 19 -307 801 -272
 rect 19 -333 228 -307
 rect 254 -333 364 -307
 rect 390 -333 500 -307
 rect 526 -333 636 -307
-rect 662 -333 755 -307
-rect 19 -368 755 -333
+rect 662 -333 801 -307
+rect 19 -368 801 -333
 rect 533 -411 568 -408
 rect 533 -440 536 -411
 rect 565 -440 568 -411
@@ -75,24 +83,24 @@ rect 0 -471 170 -455
 rect 720 -489 749 -483
 rect 0 -505 124 -489
 rect 720 -506 726 -489
-rect 743 -506 774 -489
+rect 743 -506 820 -489
 rect 720 -512 749 -506
 rect 27 -550 59 -547
 rect 27 -576 30 -550
 rect 56 -576 59 -550
 rect 27 -578 59 -576
-rect 19 -627 755 -592
+rect 19 -627 801 -592
 rect 19 -653 160 -627
 rect 186 -653 296 -627
 rect 322 -653 432 -627
 rect 458 -653 568 -627
-rect 594 -653 755 -627
-rect 19 -688 755 -653
-rect 652 -791 774 -775
+rect 594 -653 801 -627
+rect 19 -688 801 -653
+rect 652 -791 820 -775
 rect 26 -809 54 -803
 rect 0 -826 31 -809
 rect 48 -826 54 -809
-rect 606 -825 774 -809
+rect 606 -825 820 -809
 rect 26 -831 54 -826
 rect 207 -840 241 -838
 rect 207 -866 211 -840
@@ -102,15 +110,15 @@ rect 715 -868 749 -866
 rect 715 -894 719 -868
 rect 745 -894 749 -868
 rect 715 -898 749 -894
-rect 19 -922 755 -912
+rect 19 -922 801 -912
 rect 19 -923 636 -922
 rect 19 -949 228 -923
 rect 254 -949 364 -923
 rect 390 -949 500 -923
 rect 526 -948 636 -923
-rect 662 -948 755 -922
-rect 526 -949 755 -948
-rect 19 -960 755 -949
+rect 662 -948 801 -922
+rect 526 -949 801 -948
+rect 19 -960 801 -949
 << via1 >>
 rect 228 283 254 309
 rect 364 283 390 309
@@ -278,7 +286,7 @@ rect 207 -870 241 -866
 rect 714 -868 750 -865
 rect 714 -894 719 -868
 rect 745 -876 750 -868
-rect 745 -893 775 -876
+rect 745 -893 820 -876
 rect 745 -894 750 -893
 rect 714 -899 750 -894
 rect 223 -922 259 -917
@@ -467,6 +475,22 @@ rect 632 -921 666 -334
 rect 632 -949 635 -921
 rect 663 -949 666 -921
 rect 632 -960 666 -949
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1777291125
+transform -1 0 801 0 -1 -664
+box -19 -24 65 296
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
+timestamp 1777291125
+transform -1 0 801 0 -1 -24
+box -19 -24 65 296
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
+timestamp 1777291125
+transform 1 0 755 0 1 24
+box -19 -24 65 296
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
+timestamp 1777291125
+transform 1 0 755 0 1 -616
+box -19 -24 65 296
 use sky130_fd_sc_hd__fa_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1777291125
 transform 1 0 19 0 1 24
@@ -490,33 +514,15 @@ rlabel metal1 -1 135 16 152 1 A0
 port 0 n signal input
 rlabel metal1 0 -151 16 -135 1 S1
 port 12 n signal output
-rlabel metal1 758 -185 774 -169 1 B1
-port 5 n signal input
-rlabel metal1 758 -151 774 -135 1 A1
-port 1 n signal input
-rlabel metal1 757 -506 774 -489 1 S2
-port 13 n signal output
 rlabel metal1 0 -471 16 -455 1 B2
 port 6 n signal input
 rlabel metal1 0 -505 16 -489 1 A2
 port 2 n signal input
 rlabel metal1 0 -826 17 -809 1 S3
 port 14 n signal output
-rlabel metal1 758 -791 774 -775 1 A3
-port 3 n signal input
-rlabel metal1 758 -825 774 -809 1 B3
-port 7 n signal input
 rlabel metal2 -1 204 17 222 1 CIN
 port 8 n signal input
-rlabel metal2 758 -893 775 -876 1 COUT
-port 9 n signal output
 rlabel metal1 19 272 51 320 1 VDD
-port 15 n power input
-rlabel metal1 723 272 755 320 1 VDD
-port 15 n power input
-rlabel metal1 723 -320 755 -272 1 VDD
-port 15 n power input
-rlabel metal1 723 -368 755 -320 1 VDD
 port 15 n power input
 rlabel metal1 19 -368 51 -320 1 VDD
 port 15 n power input
@@ -524,24 +530,42 @@ rlabel metal1 19 -320 51 -272 1 VDD
 port 15 n power input
 rlabel metal1 19 -960 51 -912 1 VDD
 port 15 n power input
-rlabel metal1 723 -960 755 -912 1 VDD
-port 15 n power input
 rlabel metal1 19 0 51 48 1 GND
 port 10 n ground input
 rlabel metal1 19 -48 51 0 1 GND
-port 10 n ground input
-rlabel metal1 723 0 755 48 1 GND
-port 10 n ground input
-rlabel metal1 723 -48 755 0 1 GND
-port 10 n ground input
-rlabel metal1 723 -640 755 -592 1 GND
-port 10 n ground input
-rlabel metal1 723 -688 755 -640 1 GND
 port 10 n ground input
 rlabel metal1 19 -640 51 -592 1 GND
 port 10 n ground input
 rlabel metal1 19 -688 51 -640 1 GND
 port 10 n ground input
-rlabel metal1 757 202 774 219 1 S0
-port 11 n signal output
+rlabel metal1 777 272 801 320 1 VDD
+port 15 n power input
+rlabel metal1 777 -320 801 -272 1 VDD
+port 15 n power input
+rlabel metal1 777 -368 801 -320 1 VDD
+port 15 n power input
+rlabel metal1 777 -960 801 -912 1 VDD
+port 15 n power input
+rlabel metal1 777 -688 801 -640 1 GND
+port 10 n ground input
+rlabel metal1 777 -640 801 -592 1 GND
+port 10 n ground input
+rlabel metal1 777 -48 801 0 1 GND
+port 10 n ground input
+rlabel metal1 777 0 801 48 1 GND
+port 10 n ground input
+rlabel metal1 804 135 820 151 1 S0
+port 16 n signal output
+rlabel metal1 804 -151 820 -135 1 A1
+port 17 n signal input
+rlabel metal1 804 -185 820 -169 1 B1
+port 18 n signal input
+rlabel metal1 803 -506 820 -489 1 S2
+port 19 n signal output
+rlabel metal2 803 -893 820 -876 1 COUT
+port 20 n signal output
+rlabel metal1 804 -825 820 -809 1 B3
+port 21 n signal input
+rlabel metal1 804 -791 820 -775 1 A3
+port 22 n signal input
 << end >>

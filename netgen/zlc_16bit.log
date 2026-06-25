@@ -330,7 +330,7 @@ Final result: Circuits match uniquely.
 -----------------------------------------
 Finish comparing spice netlist of zlc_16bit between:
 Circuit 1: /home/me/sky130_zlc_4bit/xschem/zlc_16bit.spice (last modified: 2026-06-23 16:51:54)
-Circuit 2: /home/me/sky130_zlc_4bit/magic/zlc_16bit.spice (last modified: 2026-06-23 17:44:23)
+Circuit 2: /home/me/sky130_zlc_4bit/magic/zlc_16bit.spice (last modified: 2026-06-25 18:28:47)
 Final result: Circuits match uniquely!
 Report file: zlc_16bit.log
 -----------------------------------------

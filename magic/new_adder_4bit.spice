@@ -31,7 +31,7 @@ X26 a_1091_413# CIN a_995_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0441 pd=0.63 
 X27 VGND a_76_199# COUT VNB sky130_fd_pr__nfet_01v8 ad=0.10235 pd=0.995 as=0.169 ps=1.82 w=0.65 l=0.15
 .ends
 
-.subckt new_adder_4bit S0 B0 A0 S1 B1 A1 S2 B2 A2 S3 A3 B3 CIN COUT VDD GND
+.subckt new_adder_4bit A0 A2 B0 B2 CIN GND S1 S3 VDD S0 A1 B1 S2 COUT B3 A3
 Xx1 A0 B0 CIN GND GND VDD VDD x2/CIN S0 sky130_fd_sc_hd__fa_1
 Xx2 A1 B1 x2/CIN GND GND VDD VDD x3/CIN S1 sky130_fd_sc_hd__fa_1
 Xx3 A2 B2 x3/CIN GND GND VDD VDD x4/CIN S2 sky130_fd_sc_hd__fa_1
